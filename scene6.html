@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scene #6</title>
+  <link rel="stylesheet" href="css/scene6.css">
+  <script src="js/lives.js" defer></script>
+  <script src="js/scene6.js" defer></script>
+</head>
+
+<body>
+  <div class="background-wrapper">
+    <div id="heart-container">  </div>
+
+    <div class="gif-wrapper">
+        <img src="img/gif/그림자.png" alt="그림자" class="shadow-img">
+        <img src="img/gif/젖은하양푸앙.gif" alt="움직이는 이미지" class="scene-gif">
+  
+        <img src="img/물방울.png" alt="말풍선" class="small-bubble">
+    </div>
+
+    <div class="select-button">
+        <p>푸앙이의 원래 색이 뭐였지...?</p>
+        <div class="button-row">
+          <button onmousemove="showTooltip(event, '이게 무슨 단어일까?')" onmouseleave="hideTooltip()" onclick="checkAnswer(1)">
+            <p>qnfrdms<br>tor</p>         </button>
+          <button onmousemove="showTooltip(event, '이게 무슨 단어일까?')" onmouseleave="hideTooltip()" onclick="checkAnswer(2)">
+            <p>qnsghd<br>tor</p>          </button>
+          <button onmousemove="showTooltip(event, '이게 무슨 단어일까?')" onmouseleave="hideTooltip()" onclick="checkAnswer(3)">
+            <p>shfks<br>tor</p>          </button>
+          <button onmousemove="showTooltip(event, '이게 무슨 단어일까?')" onmouseleave="hideTooltip()" onclick="checkAnswer(4)">
+            <p>vkfks<br>tor</p>          </button>
+        </div>
+      </div>
+
+    <div id="popup-overlay" class="hidden"></div>
+    <div id="popup" class="hidden">
+      <p id="popup-text">틀렸습니다! 다시 시도하세요 (3)</p>
+    </div>
+
+    <div id="tooltip" class="hidden"></div>
+
+  </div>
+</body>
+</html>

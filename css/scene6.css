@@ -1,0 +1,225 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(../img/프레임\ 5&6&7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.background-wrapper {
+  position: relative;
+  width: 90vw;
+  aspect-ratio: 16 / 9;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #702D56;
+  border-radius: 20px;
+  padding: 2vw 4vw;
+  font-size: 2vw;
+  font-family: 'Galmuri9';
+  color: #000;
+  z-index: 10001;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1); /* 클릭 방지용 배경 */
+  z-index: 10000;
+}
+
+.hidden {
+  display: none;
+}
+
+#heart-container {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: flex;
+  gap: 0.1vw;
+  z-index: 10;
+}
+
+#heart-container img {
+  width: 5vw;
+  height: auto;
+  max-width: 150px;
+}
+
+.heart-img {
+  width: 5vw;
+  height: auto;
+  max-width: 150px;
+  margin-left: 1vw;
+}
+
+.gif-wrapper {
+    position: absolute;
+    bottom: 10%;
+    left: 27%;
+    z-index: 5;
+}
+  
+.shadow-img {
+  width: 22vw;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: -45vw;
+  margin-left: 10vw;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.small-bubble {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 13vw;
+  max-width: 500px;
+  height: auto;
+  z-index: 6;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.scene-gif {
+  width: 50vw;
+  height: auto;
+  max-width: 1000px;
+  pointer-events: none;
+}
+
+.select-button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1.2vh;
+  width: 100%;
+  max-width: 90vw;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.select-button > p {
+  font-family: 'Galmuri11';
+  color: rgb(0, 0, 0);
+  font-size: 2.3vw;
+  text-align: center;
+  margin: 0;
+  text-shadow:
+    -0.12em -0.12em 0 #fff,
+     0em     -0.12em 0 #fff,
+     0.12em -0.12em 0 #fff,
+    -0.12em  0em     0 #fff,
+     0.12em  0em     0 #fff,
+    -0.12em  0.12em  0 #fff,
+     0em      0.12em 0 #fff,
+     0.12em  0.12em  0 #fff;
+  z-index: 10;
+}
+
+.button-row button p {
+  font-family: 'Galmuri11';
+  color: black;
+  font-size: 2.3vw;
+  margin: 0;
+  text-shadow: none;
+  z-index: 15;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  width: 100%;
+}
+
+.button-row button {
+  position: relative;
+  background: none;
+  width: 14vw;
+  aspect-ratio: 9 / 8;
+  max-width: 230px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3vh;
+
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden; 
+}
+
+
+.button-row button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../img/선택창.png) no-repeat center center;
+  background-size: cover;
+  opacity: 0.85;
+  z-index: 0;
+  transition: all 0.2s ease; 
+}
+
+.button-row button:hover::before {
+  filter: brightness(2);
+  opacity: 1;
+}
+
+.button-row button img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: auto;
+  pointer-events: none;
+  opacity: 1;
+}
+
+#tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1vw;
+  font-family: 'Galmuri9';
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 99999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s;
+}
+
+.hidden {
+  display: none;
+}

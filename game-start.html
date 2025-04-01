@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game-start</title>
+  <link rel="stylesheet" href="css/game-start.css" />
+</head>
+<body>
+    <div class="background-wrapper">
+      <div class="container">
+        <h1>사라진<br>벚꽃의 색을<br>되돌려놓자!</h1>
+        <h2 onclick="startGame()">화면을 클릭하여 시작하세요 ▶</h2>
+        <h3>※총 세번의 목숨이 있습니다※</h3>
+      </div>
+
+      <div class="gif-wrapper">
+        <img src="img/gif/슬픈핑크푸앙.gif" alt="움직이는 이미지" class="scene-gif">
+      </div>
+
+      <button id="reset-button" onclick="resetLives()">초기화 하기</button>
+    </div>
+  
+    <script>
+      function resetLives() {
+        localStorage.setItem('lives', '3');
+        alert("목숨이 3개로 초기화되었습니다!");
+      }
+  
+      function startGame() {
+        window.location.href = "scene1.html";
+      }
+    </script>
+  </body>
+  
+</html>

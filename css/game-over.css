@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'bitbit';
+    src: url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') format('woff2'),
+         url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff') format('woff');
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-image: url(../img/게임\ 오버.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-wrapper {
+    position: relative;
+    width: 90vw;
+    aspect-ratio: 16 / 9;
+  }
+
+  .gif-wrapper {
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    transform: translateY(13%);
+    z-index: 5;
+  }
+  
+  .shadow-img {
+    width: 22vw;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: -42vw;
+    margin-left: 12vw;
+    pointer-events: none;
+    z-index: 3;
+  }
+  
+  .scene-gif {
+    width: 50vw;
+    height: auto;
+    max-width: 1000px;
+    pointer-events: none;
+  }
+ 
+  #reset-button {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    padding: 1vw 1.5vw;
+    font-size: 2vw;
+    font-family: 'Galmuri9';
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: 2px solid #702D56;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  #reset-button:hover {
+    background-color: #f5d2e0;
+  }

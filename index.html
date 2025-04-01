@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>무작위 이미지 배치 및 비밀번호 확인</title>
+    <link rel="stylesheet" href="css/password.css">
+</head>
+<body>
+    <div id="imageContainer">
+        <img src="img/컬러QR.png" alt="컬러QR" id="pink1">
+        <img src="img/컬러QR.png" alt="컬러QR" id="pink2">
+        <img src="img/컬러QR.png" alt="컬러QR" id="pink3">
+        <img src="img/컬러QR.png" alt="컬러QR" id="pink4">
+        <img src="img/컬러QR.png" alt="컬러QR" id="pink5">
+        <img src="img/흑백QR.png" alt="흑백QR" id="gray1">
+        <img src="img/흑백QR.png" alt="흑백QR" id="gray2">
+        <img src="img/흑백QR.png" alt="흑백QR" id="gray3">
+        <img src="img/흑백QR.png" alt="흑백QR" id="gray4">
+        <img src="img/흑백QR.png" alt="흑백QR" id="gray5">
+    </div>
+    <div class="password-container">
+        <h1>비밀번호를 입력하세요</h1>
+        <input type="password" id="password" placeholder="비밀번호">
+        <button onclick="checkPassword()">확인</button>
+        <div id="message"></div>
+    </div>
+    <script src="js/password.js"></script>
+</body>
+</html>

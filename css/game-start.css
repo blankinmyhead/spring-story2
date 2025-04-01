@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'bitbit';
+  src: url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') format('woff2'),
+       url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff') format('woff');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(../img/프레임\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'bitbit';
+  color: white;
+  -webkit-text-stroke: 0.02vw;
+  -webkit-text-stroke-color: #702D56;
+  font-size: 8.4vw;
+  margin: 10vw 0 0 0;
+}
+
+h2 {
+  font-family: 'Galmuri9', sans-serif !important;
+  color: white;
+  font-size: 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  cursor: pointer;
+}
+
+h3 {
+  font-family: 'Galmuri9', sans-serif !important;
+  color: white;
+  font-size: 2vw;
+  margin-top: 0.5vw;
+}
+
+.background-wrapper {
+  position: relative;
+  width: 90vw;
+  aspect-ratio: 16 / 9;
+}
+
+#reset-button {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(10%, 10%);
+  padding: 1vw 1.5vw;
+  font-size: 2vw;
+  font-family: 'Galmuri9';
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: 2px solid #702D56;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+#reset-button:hover {
+  background-color: #f5d2e0;
+}
+
+.gif-wrapper {
+  position: absolute;
+  bottom: 4%;
+  left: 80%;
+  z-index: 5;
+}
+
+.scene-gif {
+  width: 25vw;
+  height: auto;
+  max-width: 1000px;
+  pointer-events: none;
+}

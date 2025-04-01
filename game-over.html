@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><game-over></game-over></title>
+  <link rel="stylesheet" href="css/game-over.css" />
+</head>
+<body>
+    <div class="background-wrapper">
+      <button id="reset-button" onclick="resetLives()">다시하기</button>
+      <div class="gif-wrapper">
+        <img src="img/gif/그림자.png" alt="그림자" class="shadow-img">
+        <img src="img/gif/슬픈파랑푸앙.gif" alt="움직이는 이미지" class="scene-gif">
+        </div>
+    </div>
+
+  <script>
+    function resetLives() {
+        window.location.href = "index.html";
+    }
+
+  </script>
+</body>
+</html>

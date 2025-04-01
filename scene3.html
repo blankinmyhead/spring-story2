@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scene #3</title>
+  <link rel="stylesheet" href="css/scene3.css">
+  <script src="js/lives.js" defer></script>
+  <script src="js/scene3.js" defer></script>
+</head>
+
+<body>
+  <div class="background-wrapper">
+    <div id="heart-container">  </div>
+
+    <div class="gif-wrapper">
+      <img src="img/gif/그림자.png" alt="그림자" class="shadow-img">
+      <img src="img/gif/부탁핑크푸앙.gif" alt="움직이는 이미지" class="scene-gif">
+    </div>
+
+    <div class="select-button">
+        <p>어떻게 할까?</p>
+        <div class="button-row">
+          <button onmousemove="showTooltip(event, '핑크 푸앙을 도와줄까?')" onmouseleave="hideTooltip()" onclick="checkAnswer(1)">
+            <p>도와준다</p>
+          </button>
+          <button onmousemove="showTooltip(event, '너무하긴 하지만 무시해볼까?')" onmouseleave="hideTooltip()" onclick="checkAnswer(2)">
+            <p>무시한다</p>
+          </button>
+        </div>
+      </div>
+
+    <div id="popup-overlay" class="hidden"></div>
+
+    <div id="popup" class="hidden">
+      <p id="popup-text">틀렸습니다! 다시 시도하세요 (3)</p>
+    </div>
+
+  </div>
+
+  <div id="tooltip" class="hidden"></div>
+
+</body>
+</html>
